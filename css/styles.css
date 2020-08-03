@@ -138,6 +138,9 @@ span.accent {
       rgba(47, 48, 58, 0.8)
     ),
     url(../images/Header.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 
   /* background-color: rgba(47, 48, 58, 0.8); */
   outline: 2px solid red;
