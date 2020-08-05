@@ -89,9 +89,7 @@ span.accent {
 .site-nav {
   display: flex;
 }
-.site-nav .link {
-  padding-bottom: 28px;
-}
+
 .site-nav .item + .item {
   margin-left: 50px;
 }
@@ -142,8 +140,7 @@ span.accent {
   background-position: center;
   background-size: contain;
 
-  /* background-color: rgba(47, 48, 58, 0.8); */
-  outline: 2px solid red;
+  background-color: rgba(47, 48, 58, 0.8);
 }
 .hero {
   text-align: center;
@@ -199,7 +196,7 @@ span.accent {
   padding-bottom: 0;
 }
 .feature-title {
-  margin-top: 0;
+  margin-top: 30px;
   margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
@@ -218,6 +215,26 @@ span.accent {
 }
 .feature-item:nth-child(4n) {
   margin-right: 0;
+}
+.feature-item::before {
+  display: block;
+  content: "";
+  height: 120px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--background-color-second);
+}
+.icon-antena::before {
+  background-image: url(../images/icons/features/antenna.svg);
+}
+.icon-clock::before {
+  background-image: url(../images/icons/features/clock.svg);
+}
+.icon-vector::before {
+  background-image: url(../images/icons/features/vector.svg);
+}
+.icon-astronaut::before {
+  background-image: url(../images/icons/features/astronaut.svg);
 }
 .feature-description {
   margin-top: 0;
