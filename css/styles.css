@@ -346,6 +346,27 @@ span.accent {
 .clients-item:nth-child(6n) {
   margin-right: 0;
 }
+.clients.link {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 90px;
+
+  border: 1px solid var(--icon-social-main-color);
+  border-radius: 4px;
+}
+.clients-icon {
+  fill: var(--icon-social-main-color);
+}
+.clients.link:hover .clients-icon,
+.clients.link:focus .clients-icon {
+  fill: var(--accent-color);
+}
+.clients.link:hover,
+.clients.link:focus {
+  border: 1px solid var(--accent-color);
+}
 
 /* Footer */
 footer {
@@ -383,7 +404,14 @@ footer {
 .join-us.list {
   display: flex;
 }
-
+.join-us.link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+}
 .subscribe {
   display: block;
   margin-bottom: 20px;
