@@ -377,7 +377,6 @@ footer {
 .footer {
   display: flex;
 
-  justify-content: space-between;
   align-items: center;
 }
 
@@ -400,9 +399,15 @@ footer {
 .address .address-map {
   color: var(--white-color);
 }
-
+.join-us-box {
+  margin-left: 70px;
+  margin-right: 93px;
+}
 .join-us.list {
   display: flex;
+}
+.join-us.list .item + .item {
+  margin-left: 10px;
 }
 .join-us.link {
   display: inline-flex;
@@ -411,6 +416,14 @@ footer {
   border-radius: 50%;
   width: 44px;
   height: 44px;
+  background: rgba(255, 255, 255, 0.1);
+}
+.join-us.link:hover,
+.join-us.link:focus {
+  background-color: var(--accent-color);
+}
+.join-us .social-icon {
+  fill: var(--white-color);
 }
 .subscribe {
   display: block;
