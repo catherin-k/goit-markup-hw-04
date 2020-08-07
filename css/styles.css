@@ -108,10 +108,17 @@ span.accent {
   letter-spacing: 0.02em;
   color: var(--title-text-color);
 }
+.auth-nav .link {
+  color: var(--primary-text-color);
+}
+.auth-nav-icon {
+  vertical-align: middle;
+  margin-right: 10px;
+  fill: currentColor;
+}
 .site-nav .link:hover,
 .site-nav .link:focus {
   color: var(--accent-color);
-  border-bottom: 2px solid var(--accent-color);
 }
 .auth-nav .link:hover,
 .auth-nav .link:focus,
@@ -120,9 +127,6 @@ span.accent {
   color: var(--accent-color);
 }
 
-.auth-nav .link {
-  color: var(--primary-text-color);
-}
 /* Герой */
 
 .hero-box {
@@ -222,15 +226,6 @@ span.accent {
   padding: 25px 100px;
 }
 
-.icon-clock::before {
-  background-image: url(../images/icons/features/clock.svg);
-}
-.icon-vector::before {
-  background-image: url(../images/icons/features/vector.svg);
-}
-.icon-astronaut::before {
-  background-image: url(../images/icons/features/astronaut.svg);
-}
 .feature-description {
   margin-top: 0;
   margin-bottom: 0;
